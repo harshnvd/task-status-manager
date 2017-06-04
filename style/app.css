@@ -1,0 +1,204 @@
+/* BASE */
+
+html{
+    /*background-color:rgb(0,121,191);*/
+    background-color: #2c3e50;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    /*background-color:rgb(0,121,191);*/
+    background-color: #2c3e50;
+    background: #2c3e50;
+}
+header{
+    background-color: #2c3e50;
+    color: #FFF;
+    margin: 0;
+    padding: .2em;
+    overflow: hidden;
+}
+
+input{
+  border-radius: 4px;
+}
+
+/* END BASE */
+
+.app-name{
+    font-family: 'Yesteryear', cursive;
+    color: #fff;
+    font-weight: 500;
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+    text-indent: .5em;
+}
+
+.list{
+     width: 15em;
+    background-color: #ecf0f1;
+    border-radius: 1em;;
+    padding: 10px;
+    /*height: 15em;*/
+	  margin: 1em;
+    display: inline-block;
+    border: 1px solid #999;
+    vertical-align: top;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+   transition: 0.2s;
+}
+.list:hover{
+  box-shadow: 5px 10px 10px 0 rgba(0,0,0,0.2);
+}
+
+.list h1{
+
+  font-weight: 700;
+  color: #2c3e50;
+	font-size:1em;
+	margin: 1em 0;
+}
+
+.list input{
+  margin-bottom:0;
+}
+
+.list.new-list{
+  background-color: #628DA4;
+}
+
+.list-inline{
+    display: inline-block;
+}
+
+.lists-container{
+  padding: 20px;
+  position: relative;
+  list-style: none;
+	margin: 3em;
+	margin-left: -24px;
+	padding: 0;
+	text-align: center;
+	width: 100%;
+	perspective: 500px;
+
+}
+.ui-sortable-placeholder {
+	@extend .list;
+	background: #95a5a6;
+	box-shadow: inset 1px 1px 2px rgba(black,0.3);
+}
+.ui-sortable-helper {
+	box-shadow: 2px 2px 4px rgba(black,0.5);
+	cursor: move;
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+	transform: rotateZ(2deg) scale(1.05);
+	transition: 0.2s transform;
+}
+
+.remove{
+    width: 15px;
+    height: 15px;
+    background: url( ../img/x.svg);
+}
+
+.remove-small{
+    width: 10px;
+    height: 10px;
+    background: url( ../img/x_sm.svg);
+}
+
+.remove-list{
+  position : absolute;
+  margin: 6px;
+  font-family: Helvetica, Arial, Sans-Serif;
+  top: 0;
+  right: 0;
+  font-weight: 700;
+  color: #205c7e;
+}
+
+.remove-card{
+    position: absolute;
+    top: 3px;
+    right: 3px;
+}
+
+.no-display{
+    display: none;
+}
+
+.card{
+    padding: 20px;
+    background-color: #FFF;
+    border-radius: 4px;
+    margin: 10px 0;
+    border: 1px solid #b9b9b9;
+    position: relative;
+}
+
+.edit{
+    width: 15px;
+    height: 15px;
+    background: url( ../img/pen_alt_stroke.svg);
+}
+
+.edit-small{
+    width: 10px;
+    height: 10px;
+    background: url( ../img/pen_alt_stroke_sm.svg);
+}
+
+.edit-card{
+    display: block;
+    position: absolute;
+    top: 3px;
+    right: 20px;
+}
+
+.edit:hover{
+    background: url( ../img/pen_alt_fill.svg);
+}
+
+.edit_sm:hover{
+    background: url( ../img/pen_alt_fill_sm.svg);
+}
+
+.card:hover{
+    border-color: #205c7e;
+}
+
+.hand{
+    cursor: pointer;
+}
+
+input.search{
+    width: 200px;
+    margin-top: 4px;
+    margin-bottom: 0;
+    margin-right: 10px;
+}
+
+.select-list{
+    margin: 10px 0 0 0;
+}
+
+.header-link{
+    color: #FFF;
+    vertical-align: middle;
+}
+
+.header-link:hover{
+    color: #e3e3e3;
+}
+
+[ng\:cloak], [ng-cloak], .ng-cloak {
+  display: none;
+}
+* {
+	box-sizing: border-box;
+}
